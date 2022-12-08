@@ -241,7 +241,7 @@ article > .cards > .card > button:hover{
         font-size: 2vw;
     }
     
-    .agendar > button{       
+    .agendar > a{       
         top:100px ;        
     }
 
@@ -274,4 +274,37 @@ article > .cards > .card > button:hover{
     article > .cards{
         flex-direction: column;
     }
+
+    article > .cards > .card{
+        width: 90%;
+        left:10px;
+        padding-bottom: 30px;
+    }
+
+    .card-desc{
+        margin-bottom: 0px;
+    }
 }
+
+@media only screen and (max-width: 500px){
+    .navbar{
+        width: 110%;
+    }
+    .container{
+        width: 110%;
+    }
+    .agendar > a{
+        top:75px;
+        font-size: 2.5vw;
+    }
+
+    article > .cards > .card{
+        width: 80%;        
+        padding-bottom: 30px;
+    }
+
+    #tratamentos > article > .titulo{
+        font-size: 7vw;        
+    }
+}
+
