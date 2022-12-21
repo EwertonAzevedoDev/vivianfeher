@@ -1,0 +1,61 @@
+#menu-tratamentos{
+    position: relative;
+    margin: 10px;
+    font-size: clamp(0.5em + 1.1vw,1em + 1.2vw,1.4vw);
+    margin-bottom: 10vh;
+    width: 40%;
+    padding-top: 2vh;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;    
+    border-left: rgb(63, 38, 37) groove 3px;
+}
+
+#menu-tratamentos > article > h2{
+    font-size: clamp(0.8em + 1.1vw,1em + 1.2vw,1.4vw);
+    margin-bottom: 20px;
+    
+}
+
+#menu-tratamentos > article > ul > li > ul > li:first-child{
+    margin-top: 10px;
+}
+
+#menu-tratamentos > article > ul > li > ul > li{
+    margin-bottom: 5px;
+    color: rgb(87, 65, 65);
+}
+
+#menu-tratamentos > article > ul > li > ul > li:last-child{
+    margin-bottom: 10px;
+}
+
+#menu-tratamentos > article > ul > li > span{
+    font-size: clamp(0.2em + 1.1vw,1em + 1.2vw,1.4vw);
+}
+
+#menu-tratamentos > article > ul > li > ul{  
+    font-size: clamp(0.1em + 1.0vw,1em + 1.1vw,1.2vw);  
+    margin-left: 1vw;
+}
+
+@media only screen and (max-width: 1200px){    
+    .titulo{
+        font-size: 4vw;
+    }  
+
+    #menu-tratamentos{   
+        border-left: none; 
+        border-top: rgb(63, 38, 37) groove 5px;   
+        width: 80%;        
+    }
+    
+}
+
+@media only screen and (max-width: 700px){
+    
+}
+
+@media only screen and (max-width: 500px){
+    
+}
