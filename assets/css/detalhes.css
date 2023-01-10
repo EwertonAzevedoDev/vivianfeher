@@ -1,3 +1,59 @@
+.container{
+    position: relative;
+}
+.info{
+    position: relative;
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.agendar > a{
+    position: relative;    
+    background-color: rgb(69, 49, 25);
+    top: 20px;
+    color:white;
+    padding: 10px;
+    border: 0;
+    transition: 0.05s ease;
+}
+
+.agendar > a:active{
+    background-color: rgb(80, 60, 37);
+}
+
+.agendar > a:hover{
+    cursor: pointer;
+}
+
+#menuCheck{
+    display: none;
+}
+
+#menuCheck:checked ~ #menuLateral{
+    transform: translateX(450px);
+}
+
+#hamburger{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+#menuLateral{
+    
+    padding: 20px ;
+    padding-top: 50px ;
+    height: 100%;
+    width: 400px;
+    position: relative;
+    transition: all .2s ease-in-out;
+    left: -450px;
+}
 #menu-tratamentos{
     position: relative;
     margin: 10px;
@@ -8,7 +64,7 @@
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 20px;    
-    border-left: rgb(63, 38, 37) groove 3px;
+    
 }
 
 #menu-tratamentos > article > h2{
@@ -39,23 +95,115 @@
     margin-left: 1vw;
 }
 
+#detalhes{
+    position: relative;
+    margin: 10px;
+    padding-top: 2vh;
+    font-size: clamp(0.5em + 1.1vw,1em + 1.2vw,1.4vw);
+    margin-bottom: 10vh;
+    width: 100%; 
+    height: 650px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#detalhes > article > .titulo{
+    margin-bottom: 30px;
+    font-size: clamp(1em + 1.2vw,1em + 1.4vw,1.6vw);
+}
+
+#detalhes > article > p{
+    line-height: 3.5vh;
+    color:rgb(69, 49, 25);
+}
+
+#detalhes > article > h3{
+    line-height: 4vh;
+    font-weight: bolder;
+    color:rgb(69, 49, 25);
+}
+
+#d-introducao{
+    padding-top: 200px;
+    
+}
+
+#d-micoseLaser{
+    padding-top: 200px;
+    margin-top: 410px;
+}
+
+#d-micoseEletrocauterio{
+    padding-top: 200px;
+    margin-top: 410px;
+    margin-bottom: 410px;
+}
+
+.d-tratamento > article > p{
+    line-height: 2vh;
+    color:rgb(69, 49, 25);
+}
+
 @media only screen and (max-width: 1200px){    
     .titulo{
         font-size: 4vw;
     }  
-
+    .info{
+        flex-direction:row;
+    }
     #menu-tratamentos{   
-        border-left: none; 
-        border-top: rgb(63, 38, 37) groove 5px;   
-        width: 80%;        
+           
+        width: 30%;        
     }
     
 }
 
 @media only screen and (max-width: 700px){
+    #menu-tratamentos{   
+        font-size: 6vw;   
+        width: 35%;        
+    }
+
+    #menu-tratamentos > article > ul > li > span{
+        font-size: 2.5vw;
+    }
     
+    #menu-tratamentos > article > ul > li > ul{  
+        font-size: 2vw;
+        margin-left: 1vw;
+    }
 }
 
 @media only screen and (max-width: 500px){
+    body{
+        width: 100%;
+        position: relative;
+    }
+    .navbar{        
+        gap:7%;         
+    }
     
+    .logo{        
+        margin-left: 20px;  
+        font-size: 4vw;  
+    }
+    
+    .menu{
+        display: flex;   
+        gap: 5%;
+        font-size: 3vw;           
+    }
+    #menu-tratamentos{   
+        font-size: 6vw;   
+        width: 35%;        
+    }
+
+    #menu-tratamentos > article > ul > li > span{
+        font-size: 2.5vw;
+    }
+    
+    #menu-tratamentos > article > ul > li > ul{  
+        font-size: 2vw;
+        margin-left: 1vw;
+    }
 }

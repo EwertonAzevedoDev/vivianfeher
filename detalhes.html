@@ -16,31 +16,25 @@
         <nav class="navbar">
             <span class="logo"><a href="index.html">VIVIAN FEHER</a></span>
             <ul class="menu">                
-                <li class="menu-item"><a href="#sobre">Sobre</a></li>
-                <li class="menu-item"><a href="#endereco">Endereço</a></li>
-                <li class="menu-item"><a href="#tratamentos">Tratamentos</a></li>                
+                <li class="menu-item"><a href="index.html#sobre">Sobre</a></li>
+                <li class="menu-item"><a href="index.html#endereco">Endereço</a></li>
+                <li class="menu-item"><a href="index.html#tratamentos">Tratamentos</a></li>                
                 <li class="menu-item"><a href="detalhes.html">Detalhes</a></li>                
             </ul>
         </nav>
     </header>
     <main class="container">
         <div class="info">
-            <section id="sobre">
-                <article>
-                    <h2 class="titulo">Detalhes dos Tratamentos</h2>
-                    <p>Nesta seção mostrarei em detalhes cada procedimento!</p>
-                    <p>Você vai entender o que é cada tratamento, quando e porque fazer.</p>
-                    <p>E poderá ver o antes e depois de alguns tratamentos.</p>                    
-                </article>
-            </section>
             <section id="menu-tratamentos">
-                <article>
+                <input type="checkbox" id="menuCheck">
+                <label for="menuCheck" id="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></label>
+                <article id="menuLateral">
                     <h2 class="titulo">Tratamentos</h2>
                     <ul>
                         <li>
                             <span>Podologia</span>
                             <ul>
-                                <li><a href="#">Micose Laser</a></li>
+                                <li><a href="#d-micoseLaser">Micose Laser</a></li>
                                 <li><a href="#">Micose Eletrocauterio</a></li>
                                 <li><a href="#">Verruga plantar</a></li>
                                 <li><a href="#">Tratamento de calosidade</a></li>
@@ -86,6 +80,42 @@
                     </ul>
                 </article>
             </section>
+            <section id="detalhes">
+                <article id="d-introducao">
+                    <h2 class="titulo">Detalhes dos Tratamentos</h2>
+                    <p>Nesta seção mostrarei em detalhes cada procedimento!</p>
+                    <p>Você vai entender o que é cada tratamento, quando e porque fazer.</p>
+                    <p>E poderá ver o antes e depois de alguns tratamentos.</p>                    
+                </article>
+
+                <article id="d-micoseLaser" class="d-tratamento">
+                    <h2 class="titulo">Micose Laser</h2>
+                    <p>Nesta seção mostrarei em detalhes cada procedimento!</p>
+                    <p>Você vai entender o que é cada tratamento, quando e porque fazer.</p>
+                    <p>E poderá ver o antes e depois de alguns tratamentos.</p> 
+                    <h3>Quem pode fazer o tratamento?</h3>     
+                    <p>Qualquer pessoa na condição de....</p>                                
+                    <h3>Quem deve fazer o tratamento?</h3>   
+                    <p>Todos que apresentarem isso e aquilo....</p> 
+                    <div class="agendar">
+                        <a target="_blank" href=" https://api.whatsapp.com/send?phone=5511996299927&text=Olá Vivian Feher, gostaria de agendar Micose Laser." class="agendar" onclick="console.log('Abrindo o Whatsapp')"><i class="fa fa-whatsapp"></i> Agendamento</a>
+                    </div>                                   
+                </article>
+
+                <article id="d-micoseEletrocauterio" class="d-tratamento">
+                    <h2 class="titulo">Micose Eletrocauterio</h2>
+                    <p>Nesta seção mostrarei em detalhes cada procedimento!</p>
+                    <p>Você vai entender o que é cada tratamento, quando e porque fazer.</p>
+                    <p>E poderá ver o antes e depois de alguns tratamentos.</p> 
+                    <h3>Quem pode fazer o tratamento?</h3>     
+                    <p>Qualquer pessoa na condição de....</p>                                
+                    <h3>Quem deve fazer o tratamento?</h3>   
+                    <p>Todos que apresentarem isso e aquilo....</p>  
+                    <div class="agendar">
+                        <a target="_blank" href=" https://api.whatsapp.com/send?phone=5511996299927&text=Olá Vivian Feher, gostaria de agendar Micose Eletrocauterio." class="agendar" onclick="console.log('Abrindo o Whatsapp')"><i class="fa fa-whatsapp"></i> Agendamento</a>
+                    </div>                 
+                </article>
+            </section>            
         </div>
     </main>
     <footer>

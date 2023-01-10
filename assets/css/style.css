@@ -10,7 +10,7 @@ body{
     display: flex;
     height: 100px;
     align-items: center;
-    justify-content: space-evenly;
+    gap:30%;
     background: rgb(184,180,180);
     background: linear-gradient(180deg, rgba(184,180,180,1) 4%, rgba(255,255,255,1) 48%, rgba(227,227,227,1) 99%);    
     color: rgb(69, 49, 25);
@@ -19,7 +19,8 @@ body{
 
 .logo{
     display: flex; 
-    font-size: 2vw;   
+    font-size: 2vw; 
+    margin-left: 40px;  
 }
 
 .menu{
@@ -103,7 +104,8 @@ body{
     padding-top: 2vh;
     font-size: clamp(0.5em + 1.1vw,1em + 1.2vw,1.4vw);
     margin-bottom: 10vh;
-    width: 60%;
+    width: 60%;    
+
 }
 
 #sobre > article > .titulo{
@@ -331,12 +333,21 @@ footer > span:hover{
 }
 
 @media only screen and (max-width: 500px){
-    .navbar{
-        width: 110%;
+    .navbar{        
+        gap:7%;         
     }
-    .container{
-        width: 110%;
+    
+    .logo{        
+        margin-left: 20px;  
+        font-size: 4vw;  
     }
+    
+    .menu{
+        display: flex;   
+        gap: 5%;
+        font-size: 3vw;           
+    }
+    
     .agendar > a{
         top:75px;
         font-size: 2.5vw;
@@ -349,6 +360,12 @@ footer > span:hover{
 
     #tratamentos > article > .titulo{
         font-size: 7vw;        
+    }
+
+    footer{
+        
+        min-height: 130px;
+       
     }
 }
 
