@@ -128,16 +128,17 @@
     
 }
 
-#d-micoseLaser{
-    padding-top: 200px;
-    margin-top: 410px;
+#d-tratamento{
+    width: 60%;
 }
 
-#d-micoseEletrocauterio{
-    padding-top: 200px;
-    margin-top: 410px;
-    margin-bottom: 410px;
+p{
+    margin-bottom: 20px;
 }
+
+
+
+
 
 .d-tratamento > article > p{
     line-height: 2vh;

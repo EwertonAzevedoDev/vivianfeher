@@ -187,7 +187,7 @@ article > .cards > .card{
 }
 
 
-article > .cards > .card > button{
+article > .cards > .card > a{
     position: relative;    
     background-color: rgb(69, 49, 25);
     color:white;
@@ -196,11 +196,11 @@ article > .cards > .card > button{
     transition: 0.05s ease;
 }
 
-article > .cards > .card > button:active{
+article > .cards > .card > a:active{
     background-color: rgb(80, 60, 37);
 }
 
-article > .cards > .card > button:hover{
+article > .cards > .card > a:hover{
     cursor: pointer;
 }
 
